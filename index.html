@@ -32,8 +32,8 @@ scroll-behavior: smooth;
 /* First image (Logo. Full height) */
 .cover {
   background-image: url('webpage.png');
+  min-width: 100%;
   min-height: 100%; 
-  min-width: 100%; 
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,14 +110,9 @@ scroll-behavior: smooth;
   </div>
 </nav>
 
-<div class="cover" ></div>
-
-
-  <div class="col-sm-6" style="padding-left: 10%; padding-right:10%; float:left; margin-top:10%">
-    <h1 class = "w3-left">Hello, my name is Rebecca Luo</h1> <br>
-    <h5 class = "w3-left">Welcome to my personal website! </h5> <br>
+<div class="cover" >
+  <div class = img-responsive> </div>
 </div>
-
 
 
 
@@ -140,24 +135,51 @@ scroll-behavior: smooth;
 
 <!-- middle section about -->
 
+
+
 <!-- Project -->
 <div class = "Projects w3-center" id = "projects">
   <br>
   <h3>PROJECTS</h3> 
   <br>
-  <p><i>Click on each project/organization for more information.</i></p>
+  <p><i>Click on each project/organizations I love being involved with for more information.</i></p>
   <br><br> 
   <div class="container">
     
-          <div class="w3-col l4 m6" style = "margin-bottom: 5%; margin-left: 33%">
+        <!--   <div class="w3-col l4 m6" style = "margin-bottom: 5%; margin-left: 33%">
           <div class="w3-hover-opacity">
           <a href="https://rluo24.myportfolio.com/" target="_blank"><img src="View.png" class="img-responsive" alt="img" ></a>
           </div>
-          </div>
-    
+          </div>-->
+
+<!-- research and design -->
+
+          <h3>Research / design projects</h3><br>
+
+
       <div class=" row w3-row-padding w3-section">
 
-        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="AirEmory.html"><img src="2.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Air Emory </h4>
+          <p>Aug 2020 – May 2022 || Atlanta, GA </p>          
+          <p style="padding: 5%; ">Student-led air quality sensor network displaying live data from around campus at Emory.</p>
+        </div>
+        
+        
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="AJS.html"><img src="4.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4> AJ Stickers </h4>
+          <p>June 2021 – May 2022 || Atlanta, GA</p>             
+          <p style="padding: 5%;">E-commerace sticker store to empower women-in-STEM and promote mental health. </p>
+        </div>
+        
+        
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
           <div class="w3-hover-opacity">
               <a href="Research.html"><img src="1.png" class="img-responsive" alt="img"></a>
           </div>
@@ -166,17 +188,44 @@ scroll-behavior: smooth;
           <p style="padding: 5%; ">National Science Foundation REU project on Examination of the Mechanical and Phase Properties of the Refractory High Entropy Alloy ReMoNbTaV.</p>
         </div>
 
-        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
           <div class="w3-hover-opacity">
-            <a href="AirEmory.html"><img src="2.png" class="img-responsive" alt="img"></a>
+            <a href="DT.html"><img src="5.png" class="img-responsive" alt="img"></a>
           </div>
-          <h4>Air Emory </h4>
-          <p>Aug 2020 – Present || Atlanta, GA </p>          
-          <p style="padding: 5%; ">Student-led air quality sensor network displaying live data from around campus at Emory.</p>
+          <h4>Design Thinking for Emory Goizueta</h4>
+          <p>Spring 2021 || Atlanta, GA </p>             
+          <p style="padding: 5%; ">Semester long team project to reimagine & improve the Emory Goizueta Business School Accounting BBA/MPA program through the process of design thinking.  </p>
         </div>
 
+     </div>
 
-        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+<!-- organizations -->
+
+          <h3>Organizations I'm passionate about :) </h3><br>
+    <div class=" row w3-row-padding w3-section">
+
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="BCNC.html"><img src="7.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>BCNC</h4>
+          <p>Sept 2022 – Present || Boston, MA </p>            
+          <p style="padding: 5%;">Boston Chinatown Neighborhood Center (BCNC) empowers Asians and new immigrants to by providing a broad range programs and services to more than 13,000 children, youth, and adults every year. </p>
+       </div>
+       
+       
+        <div class="w3-col l3 m6" style = "margin-bottom: 1%">
+          <div class="w3-hover-opacity">
+            <a href="CLC.html"><img src="8.png" class="img-responsive" alt="img"></a>
+          </div>
+          <h4>Cambridge Community Learning Center</h4>
+          <p>Sept 2023 – Present || Boston, MA </p>            
+          <p style="padding: 5%;">The Cambridge Community Learning Center (CLC) provides free classes and programs to adult learners in the area. </p>
+       </div>
+       
+       
+       <div class="w3-col l3 m6" style = "margin-bottom: 1%">
           <div class="w3-hover-opacity">
             <a href="MCF.html"><img src="3.png" class="img-responsive" alt="img"></a>
           </div>
@@ -186,28 +235,7 @@ scroll-behavior: smooth;
         </div>
 
 
-        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="DT.html"><img src="5.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Design Thinking for Emory Goizueta</h4>
-          <p>Spring 2021 || Atlanta, GA </p>             
-          <p style="padding: 5%; ">Semester long team project to reimagine & improve the Emory Goizueta Business School Accounting BBA/MPA program through the process of design thinking.  </p>
-        </div>
-
-
-        <div class="w3-col l4 m6" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="AJS.html"><img src="4.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4> AJ Stickers </h4>
-          <p>June 2021 – Present || Atlanta, GA</p>             
-          <p style="padding: 5%;">E-commerace sticker store to empower women-in-STEM and promote mental health. </p>
-        </div>
-
-
-
-       <div class="w3-col l4 m6" style = "margin-bottom: 1%">
+       <div class="w3-col l3 m6" style = "margin-bottom: 1%">
           <div class="w3-hover-opacity">
             <a href="TO.html"><img src="6.png" class="img-responsive" alt="img"></a>
           </div>
@@ -215,8 +243,9 @@ scroll-behavior: smooth;
           <p>Sept 2018 – Present || Atlanta, GA & Remote </p>            
           <p style="padding: 5%;">Girls Who Code/Emory ProgramHers/Rewriting the Code are all organizations that aim to support women in computer science and other technological fields. </p>
        </div>
+       
+  </div>
 
-     </div>
   </div>
 </div>
 
