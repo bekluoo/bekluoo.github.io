@@ -1,276 +1,690 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<TITLE>Rebecca Luo</TITLE>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Rebecca Luo — Product Strategy &amp; Impact Investing</title>
+<meta name="description" content="Rebecca Luo is a Yale MBA candidate and former Bain &amp; Company consultant working at the intersection of product strategy and impact investing — with a side of graphite portraits and film photography.">
+<meta name="author" content="Rebecca Luo">
+<meta name="theme-color" content="#8a6068">
+<link rel="canonical" href="https://bekluoo.github.io/">
 
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bekluoo.github.io/">
+<meta property="og:title" content="Rebecca Luo — Product Strategy &amp; Impact Investing">
+<meta property="og:description" content="Yale MBA candidate, former Bain consultant. Product strategy, impact measurement, and social ventures — plus a gallery of drawings and film photographs.">
+<meta property="og:image" content="https://bekluoo.github.io/assets/img/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234356b5'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="assets/css/site.css">
+
+<!-- Reveal animations only apply when scripts run, so the page stays
+     fully readable if JS is blocked. -->
+<script>document.documentElement.className += " js";</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rebecca Luo",
+  "url": "https://bekluoo.github.io/",
+  "jobTitle": "MBA Candidate",
+  "email": "mailto:rebeccaluo0508@gmail.com",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Yale School of Management" },
+    { "@type": "CollegeOrUniversity", "name": "Emory University" }
+  ],
+  "knowsAbout": ["Product Strategy", "Impact Investing", "Impact Measurement", "Technology Due Diligence", "Design Thinking"],
+  "sameAs": ["https://www.linkedin.com/in/rebecca-luo/"]
+}
+</script>
 </head>
-
 
 <body>
 
-<style>
+<a class="sr-only" href="#about">Skip to content</a>
 
-body,h1,h2,h3,h4,h5,h6,p {font-family: "Lato", sans-serif;}
-body, html {
-height: 100%;
-background-color:#FFFFFF; 
-line-height: 1.8;
-scroll-behavior: smooth;
-}
+<div class="progress" role="presentation"><div class="progress__bar"></div></div>
 
+<!-- Nav =============================================================== -->
+<header class="nav">
+  <div class="nav__inner">
+    <nav aria-label="Sections">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#community">Community</a></li>
+        <li><a class="nav__link" href="#gallery">Gallery</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+      <i></i><i></i><i></i>
+    </button>
+  </div>
+</header>
 
-/* Create a Parallax Effect */
+<div class="nav__drawer" id="drawer">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#community">Community</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
 
-/* First image (Logo. Full height) */
-.cover {
-  background-image: url('webpage.png');
-  min-width: 100%;
-  min-height: 100%; 
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+<main id="top">
 
+<!-- Hero ============================================================== -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero__wash" aria-hidden="true"></div>
 
-.about {
- background-attachment: fixed;
+  <div class="hero__inner">
+    <p class="hero__hello" data-reveal>Hello! I'm</p>
+    <h1 class="hero__name display" id="hero-name" data-reveal style="--delay:60ms">Rebecca Luo</h1>
+    <p class="hero__welcome" data-reveal style="--delay:120ms">Welcome to my site :)</p>
 
-}
+    <div class="socials" data-reveal style="--delay:180ms">
+      <a class="social" style="--accent:#0a66c2" href="https://www.linkedin.com/in/rebecca-luo/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.9 21.5h4.2V9.6H2.9v11.9zM9.7 9.6h4v1.6h.06c.56-1.02 1.93-2.1 3.97-2.1 4.25 0 5.03 2.62 5.03 6.03v6.37h-4.2v-5.65c0-1.42-.03-3.25-2-3.25-2 0-2.3 1.54-2.3 3.14v5.76h-4.2V9.6z"/></svg>
+      </a>
+      <a class="social" style="--accent:#c2497c" href="mailto:rebeccaluo0508@gmail.com" aria-label="Email Rebecca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+      <a class="social" style="--accent:#d0600f" href="assets/docs/Rebecca-Luo-Resume.pdf" target="_blank" rel="noopener" aria-label="Résumé (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+      </a>
+    </div>
 
-.Projects {
-  background-image: url('pro2.png');
-  min-height: 100%; 
-  min-width: 100%;
+    <p style="margin:0"><a class="cue" href="#about"><i></i> Scroll on</a></p>
+  </div>
 
-/* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top:15%;
-  margin-bottom:0%;  
+  <div class="hero__photo" data-reveal style="--delay:150ms">
+    <img src="assets/img/portrait.jpg" width="1121" height="1400"
+         alt="Rebecca Luo standing beside the bronze cat sculpture on the Rambla del Raval in Barcelona.">
+  </div>
+</section>
 
-  color: #fff;
-}
+<!-- About ============================================================= -->
+<section class="section" id="about" aria-labelledby="about-h">
+  <div class="shell">
+    <div class="about__grid">
 
+      <figure class="snap" data-reveal>
+        <img src="assets/img/about-srilanka.jpg" width="960" height="1200" loading="lazy" decoding="async"
+             alt="Mist rolling through tea-covered hills in Sri Lanka's highlands.">
+        <figcaption>Sri Lanka</figcaption>
+      </figure>
 
+      <div class="prose" data-reveal style="--delay:100ms">
+        <h2 class="section-title display" id="about-h" style="margin:0 0 1.2rem">Nice to meet you!</h2>
+        <p>
+          I graduated from <a href="https://www.emory.edu/" target="_blank" rel="noopener">Emory</a>
+          in 2022 with degrees in Computer Science and Economics, then spent three years at
+          <a href="https://www.bain.com/industry-expertise/private-equity/tech-due-diligence/" target="_blank" rel="noopener">Bain &amp; Company's Tech Insights Group</a>,
+          running product and technology due diligence for private equity investors.
+        </p>
+        <p>
+          I'm now an MBA candidate at the
+          <a href="https://som.yale.edu/" target="_blank" rel="noopener">Yale School of Management</a>,
+          deliberately pointing that same toolkit at social enterprises and impact-driven products.
+          In 2026 that has meant rebuilding the impact measurement architecture for an education
+          social enterprise serving 1,000+ schools in Nairobi — and product strategy at
+          <a href="https://www.readworks.org/" target="_blank" rel="noopener">ReadWorks</a>,
+          a literacy nonprofit reaching 11.5M teachers/students a year.
+        </p>
+        <p>
+          Outside of work, I enjoy anything art-related, long walks, cooking/hosting, and am
+          reliably enthusiastic about picking up a new hobby!
+        </p>
 
-.fa { 
-    color: #fff;
-    font-size: 30px;
-    font-weight: normal;
-    padding: 20px;
-    text-decoration: none; 
+        <div class="facts">
+          <div class="fact" style="--t-bg:#dde3fa;--t-ink:#4356b5">
+            <span>Recent life skill</span><b>Learned how to bike!</b>
+          </div>
+          <div class="fact" style="--t-bg:#fbd9e8;--t-ink:#b03a72">
+            <span>Favorite trip</span><b>Sri Lanka</b>
+          </div>
+          <div class="fact" style="--t-bg:#cfe8d8;--t-ink:#2c6b48">
+            <span>Current artsy hobby</span><b>Photography</b>
+          </div>
+        </div>
+      </div>
 
-}
+    </div>
+  </div>
+</section>
 
-.Contact{
-    height: 5%;
-}
+<!-- Experience ======================================================== -->
+<section class="section section--alt" id="experience" aria-labelledby="exp-h">
+  <div class="shell">
 
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="eyebrow" style="--dot:var(--orange)">Career</p>
+        <h2 class="section-title display" id="exp-h">Where I've been</h2>
+      </div>
+      <a class="btn btn--accent" href="assets/docs/Rebecca-Luo-Resume.pdf" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+        Download résumé
+      </a>
+    </div>
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+    <ol class="timeline">
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-
-
-
-
-<!-- top navgation bar -->
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class = "active"><a href="index.html">HOME</a></li>
-      <li><a href="index.html#projects">PROJECTS</a></li>
-     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Hobbies.html">HOBBIES <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="Hobbies.html#art">Art</a></li>
-          <li><a href="Hobbies.html#photo">Photography</a></li>
-        </ul>
+      <li class="job job--edu" data-reveal>
+        <span class="job__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 10.6v4.2c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.2"/><path d="M21.2 9.1v5.2"/></svg>
+        </span>
+        <div class="job__head">
+          <h3 class="job__role">MBA Candidate <span class="job__org">· <a href="https://som.yale.edu/" target="_blank" rel="noopener">Yale School of Management</a></span></h3>
+          <span class="job__when">2025 &ndash; 2027</span>
+        </div>
+        <p class="job__meta">New Haven, CT</p>
+        <button class="job__toggle" type="button" aria-expanded="false" aria-controls="d-yale">
+          <span class="job__toggle-label">Show details</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="job__detail" id="d-yale" data-open="false"><div>
+          <ul>
+            <li>Teaching Assistant for <b>Global Social Entrepreneurship</b>, Spring 2027.</li>
+            <li>Coursework in Product Management, Marketing, Accounting, Management of Software Development, and Mission Driven Innovation.</li>
+          </ul>
+        </div></div>
       </li>
-      <li><a href="index.html#contact">CONTACT</a></li>
 
-    </ul>
+      <li class="job" data-reveal>
+        <span class="job__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.4 5.2 8.3 4.5 5.9 4.5H3v13h2.9c2.4 0 4.5.7 6.1 2"/><path d="M12 6.6c1.6-1.4 3.7-2.1 6.1-2.1H21v13h-2.9c-2.4 0-4.5.7-6.1 2"/><path d="M12 6.6v14.9"/></svg>
+        </span>
+        <div class="job__head">
+          <h3 class="job__role">Product Strategy &amp; Analytics Intern <span class="job__org">· <a href="https://www.readworks.org/" target="_blank" rel="noopener">ReadWorks</a></span></h3>
+          <span class="job__when">Summer 2026</span>
+        </div>
+        <p class="job__meta">New York, NY (Remote)</p>
+        <button class="job__toggle" type="button" aria-expanded="false" aria-controls="d-rw">
+          <span class="job__toggle-label">Show details</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="job__detail" id="d-rw" data-open="false"><div>
+          <ul>
+            <li>Improved an internal content-creation <b>AI tool's performance by ~20%</b> by directing comprehensive cross-functional testing.</li>
+            <li>Led feature analysis on <b>question-prompt design</b> and its impact for a flagship product serving <b>11.5M users annually</b>.</li>
+            <li>Uncovered user engagement analytics in <b>Tableau</b> and wrote the user guide that standardized the analysis process for marketing.</li>
+          </ul>
+        </div></div>
+      </li>
+
+      <li class="job" data-reveal>
+        <span class="job__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.4" width="19" height="12.1" rx="2.6"/><path d="M8.6 7.4V6.1a2.1 2.1 0 0 1 2.1-2.1h2.6a2.1 2.1 0 0 1 2.1 2.1v1.3"/><path d="M2.5 12.6h19"/></svg>
+        </span>
+        <div class="job__head">
+          <h3 class="job__role">Consultant <span class="job__org">· <a href="https://www.bain.com/industry-expertise/private-equity/tech-due-diligence/" target="_blank" rel="noopener">Bain &amp; Company, Technology Insights Group</a></span></h3>
+          <span class="job__when">2022 &ndash; 2025</span>
+        </div>
+        <p class="job__meta">Boston, MA</p>
+        <button class="job__toggle" type="button" aria-expanded="false" aria-controls="d-bain">
+          <span class="job__toggle-label">Show details</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="job__detail" id="d-bain" data-open="false"><div>
+          <ul>
+            <li>Executed <b>35+ private equity product and technology diligences</b> and strategy projects — 10+ as workstream lead, supervising ~2 associates.</li>
+            <li>Assessed software product-market fit, competitive landscape, and R&amp;D roadmap feasibility to inform investment decisions.</li>
+          </ul>
+        </div></div>
+      </li>
+
+      <li class="job" data-reveal>
+        <span class="job__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="4.6" width="16.8" height="11.4" rx="2.3"/><path d="M2 19.4h20"/></svg>
+        </span>
+        <div class="job__head">
+          <h3 class="job__role">Website Lead <span class="job__org">· <a href="https://www.airemory.com/" target="_blank" rel="noopener">AirEmory</a></span></h3>
+          <span class="job__when">2019 &ndash; 2022</span>
+        </div>
+        <p class="job__meta">Atlanta, GA</p>
+        <button class="job__toggle" type="button" aria-expanded="false" aria-controls="d-ae">
+          <span class="job__toggle-label">Show details</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="job__detail" id="d-ae" data-open="false"><div>
+          <ul>
+            <li>Orchestrated the development and UX design of the website for a student-led air quality sensor project — <a href="https://github.com/EmoryAir/EmoryAir.github.io" target="_blank" rel="noopener">AirEmory on GitHub</a>.</li>
+            <li>Coordinated with local organizations and schools to run the <b>Georgia Air Quality Challenge</b> with 40+ participants.</li>
+          </ul>
+        </div></div>
+      </li>
+
+      <li class="job job--edu" data-reveal>
+        <span class="job__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5 12 4l10 4.5-10 4.5L2 8.5Z"/><path d="M6 10.6v4.2c0 1.8 2.7 3.2 6 3.2s6-1.4 6-3.2v-4.2"/><path d="M21.2 9.1v5.2"/></svg>
+        </span>
+        <div class="job__head">
+          <h3 class="job__role">B.A. Computer Science &amp; B.A. Economics <span class="job__org">· <a href="https://www.emory.edu/" target="_blank" rel="noopener">Emory University</a></span></h3>
+          <span class="job__when">2018 &ndash; 2022</span>
+        </div>
+        <p class="job__meta">Atlanta, GA &middot; 3.8 / 4.0</p>
+        <button class="job__toggle" type="button" aria-expanded="false" aria-controls="d-emory">
+          <span class="job__toggle-label">Show details</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="job__detail" id="d-emory" data-open="false"><div>
+          <ul>
+            <li><b>President, Girls Who Code</b> (Emory chapter). <b>President &amp; founding member, ProgramHers</b>, Emory's women-in-tech organization.</li>
+            <li>Teaching Assistant for <b>Database Systems</b> and <b>Macroeconomics</b>.</li>
+            <li>Coursework in Multidisciplinary Design, Design Thinking, AI/ML, and Database Systems.</li>
+          </ul>
+        </div></div>
+      </li>
+
+    </ol>
   </div>
-</nav>
+</section>
 
-<div class="cover" >
-  <div class = img-responsive> </div>
+<!-- Projects ========================================================== -->
+<section class="section" id="projects" aria-labelledby="proj-h">
+  <div class="shell">
+
+    <div style="max-width:44rem;margin-bottom:clamp(2rem,5vw,3rem)" data-reveal>
+      <p class="eyebrow" style="--dot:var(--peri)">Selected work</p>
+      <h2 class="section-title display" id="proj-h">Projects</h2>
+      <p class="lede">Click any card for the brief.</p>
+    </div>
+
+    <div class="cluster">
+      <div class="cluster__label" data-reveal><h3>Impact &amp; product strategy</h3><span></span></div>
+      <div class="cards">
+
+        <article class="card" data-reveal style="--t-bg:#a5e4de;--t-ink:#0a5b56;--t-chip:#1a363a">
+          <span class="logo-chip"><img src="assets/img/logos/jackfruit.svg" alt="Jackfruit Network logo" width="70" height="34"></span>
+          <span class="card__kicker">Impact measurement · Nairobi</span>
+          <h4 class="card__title">Jackfruit Network</h4>
+          <span class="card__tags">
+            <span class="card__tag">Impact Measurement</span>
+            <span class="card__tag">Field Research</span>
+            <span class="card__tag">Social Enterprise</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="jackfruit"><span class="sr-only">View project: Jackfruit Network</span></button>
+        </article>
+
+        <article class="card" data-reveal style="--delay:70ms;--t-bg:#c2e5f8;--t-ink:#14607f">
+          <span class="logo-chip"><img src="assets/img/logos/readworks.svg" alt="ReadWorks logo" width="70" height="20"></span>
+          <span class="card__kicker">Product strategy · EdTech</span>
+          <h4 class="card__title">ReadWorks</h4>
+          <span class="card__tags">
+            <span class="card__tag">Product Strategy</span>
+            <span class="card__tag">AI Evaluation</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="readworks"><span class="sr-only">View project: ReadWorks</span></button>
+        </article>
+
+        <article class="card" data-reveal style="--delay:140ms;--t-bg:#cfe8d8;--t-ink:#2c6b48">
+          <span class="logo-chip logo-chip--text" aria-hidden="true">Air<br>Emory</span>
+          <span class="card__kicker">Product &amp; UX · Civic tech</span>
+          <h4 class="card__title">AirEmory</h4>
+          <span class="card__tags">
+            <span class="card__tag">UX Design</span>
+            <span class="card__tag">Front-end</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="airemory"><span class="sr-only">View project: AirEmory</span></button>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="cluster">
+      <div class="cluster__label" data-reveal><h3>Design, marketing &amp; research</h3><span></span></div>
+      <div class="cards">
+
+        <article class="card" data-reveal style="--t-bg:#f9c9de;--t-ink:#a83a6f">
+          <span class="logo-chip"><img src="assets/img/logos/ajstickers.png" alt="AJ Stickers logo" width="42" height="42"></span>
+          <span class="card__kicker">Brand &amp; marketing · E-commerce</span>
+          <h4 class="card__title">AJ Stickers</h4>
+          <span class="card__tags">
+            <span class="card__tag">Brand Strategy</span>
+            <span class="card__tag">Social Media</span>
+            <span class="card__tag">Creative Direction</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="ajstickers"><span class="sr-only">View project: AJ Stickers</span></button>
+        </article>
+
+        <article class="card" data-reveal style="--delay:70ms;--t-bg:#bcc8ec;--t-ink:#012169">
+          <span class="logo-chip"><img src="assets/img/logos/goizueta.png" alt="Emory Goizueta Business School logo" width="42" height="42"></span>
+          <span class="card__kicker">Design thinking</span>
+          <h4 class="card__title">Design Thinking @ Goizueta</h4>
+          <span class="card__tags">
+            <span class="card__tag">Design Thinking</span>
+            <span class="card__tag">User Research</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="designthinking"><span class="sr-only">View project: Design Thinking at Goizueta</span></button>
+        </article>
+
+        <article class="card" data-reveal style="--delay:140ms;--t-bg:#dbcdef;--t-ink:#4a2280">
+          <span class="logo-chip logo-chip--text" aria-hidden="true">CIMM</span>
+          <span class="card__kicker">Computational research · NSF REU</span>
+          <h4 class="card__title">CIMM Research</h4>
+          <span class="card__tags">
+            <span class="card__tag">Computational Modeling</span>
+            <span class="card__tag">Materials Science</span>
+          </span>
+          <span class="card__go">View project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <button class="card__hit" type="button" data-open-sheet="cimm"><span class="sr-only">View project: CIMM Research</span></button>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Community ========================================================= -->
+<section class="section section--alt" id="community" aria-labelledby="comm-h">
+  <div class="shell">
+
+    <div style="max-width:44rem;margin-bottom:clamp(2rem,5vw,3rem)" data-reveal>
+      <p class="eyebrow" style="--dot:var(--pink)">Community</p>
+      <h2 class="section-title display" id="comm-h">Organizations</h2>
+      <p class="lede">I am incredibly passionate about education access. Click a block to read about some organizations I loved being involved with.</p>
+    </div>
+
+    <div class="orgs" data-reveal>
+      <div class="orgs__row orgs__row--a">
+
+        <article class="org" style="--t-bg:#d3daf6;--t-ink:#2e3e86">
+          <span class="logo-chip"><img src="assets/img/logos/boundless.png" alt="Boundless Literacy logo" width="46" height="41"></span>
+          <div class="org__body">
+            <h3 class="org__name">Boundless Literacy</h3>
+            <p class="org__role">Board of Directors · New Haven</p>
+            <span class="org__more">Learn more
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+          <button class="org__hit" type="button" data-open-sheet="boundless"><span class="sr-only">Learn more about Boundless Literacy</span></button>
+        </article>
+
+        <article class="org" style="--t-bg:#f8c4da;--t-ink:#8e1b4c">
+          <span class="logo-chip"><img src="assets/img/logos/bcnc.png" alt="Boston Chinatown Neighborhood Center logo" width="46" height="20"></span>
+          <div class="org__body">
+            <h3 class="org__name">Boston Chinatown Neighborhood Center</h3>
+            <p class="org__role">College Access Mentor · Boston</p>
+            <span class="org__more">Learn more
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+          <button class="org__hit" type="button" data-open-sheet="bcnc"><span class="sr-only">Learn more about Boston Chinatown Neighborhood Center</span></button>
+        </article>
+
+      </div>
+      <div class="orgs__row orgs__row--b">
+
+        <article class="org" style="--t-bg:#bedcf0;--t-ink:#00478e">
+          <span class="logo-chip"><img src="assets/img/logos/mcf.png" alt="Migrant Children's Foundation logo" width="42" height="42"></span>
+          <div class="org__body">
+            <h3 class="org__name">Migrant Children's Foundation</h3>
+            <p class="org__role">Volunteer · Beijing (remote)</p>
+            <span class="org__more">Learn more
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+          <button class="org__hit" type="button" data-open-sheet="mcf"><span class="sr-only">Learn more about Migrant Children's Foundation</span></button>
+        </article>
+
+        <article class="org" style="--t-bg:#a9eadb;--t-ink:#0b6a57">
+          <span class="logo-chip"><img src="assets/img/logos/gwc.png" alt="Girls Who Code logo" width="42" height="42"></span>
+          <div class="org__body">
+            <h3 class="org__name">Women in Tech Orgs</h3>
+            <p class="org__role">President · Founder · Fellow</p>
+            <span class="org__more">Learn more
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+          <button class="org__hit" type="button" data-open-sheet="womenintech"><span class="sr-only">Learn more about Women in Tech organizations</span></button>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery =========================================================== -->
+<section class="section" id="gallery" aria-labelledby="gal-h">
+  <div class="shell">
+
+    <div class="section-head" data-reveal>
+      <div style="max-width:38rem">
+        <p class="eyebrow" style="--dot:var(--pink)">Just for fun</p>
+        <h2 class="section-title display" id="gal-h">Gallery</h2>
+        <p class="lede">I draw, paint, and shoot film, and I pick up new art-adjacent hobbies frequently. Here's a snapshot of my artistic corner.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter gallery">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All <b>26</b></button>
+        <button class="filter" type="button" data-filter="photo" aria-pressed="false">Photography <b>19</b></button>
+        <button class="filter" type="button" data-filter="art" aria-pressed="false">Art <b>7</b></button>
+      </div>
+    </div>
+
+    <div class="wall" id="wall">
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-boston-moon.jpg" data-alt="Moon rising over the Boston skyline from the Charles River bike path" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-boston-moon.jpg" width="760" height="570" loading="lazy" decoding="async" alt="Moon rising over the Boston skyline from the Charles River bike path">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-masquerade.jpg" data-alt="Graphite drawing of a figure wearing an ornate masquerade mask" data-medium="Graphite">
+        <img src="assets/img/gallery/thumb/a-masquerade.jpg" width="547" height="760" loading="lazy" decoding="async" alt="Graphite drawing of a figure wearing an ornate masquerade mask">
+        <span class="tile__cap">Graphite</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-green-storefront.jpg" data-alt="Plant-filled window boxes on a green-framed shopfront" data-medium="Film">
+        <img src="assets/img/gallery/thumb/p-green-storefront.jpg" width="760" height="503" loading="lazy" decoding="async" alt="Plant-filled window boxes on a green-framed shopfront">
+        <span class="tile__cap">Film</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-lanterns.jpg" data-alt="Paper lanterns glowing outside a shopfront at golden hour" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-lanterns.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Paper lanterns glowing outside a shopfront at golden hour">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-laughing-portrait.jpg" data-alt="Graphite portrait of a laughing child with hands pressed to their cheeks" data-medium="Graphite">
+        <img src="assets/img/gallery/thumb/a-laughing-portrait.jpg" width="606" height="760" loading="lazy" decoding="async" alt="Graphite portrait of a laughing child with hands pressed to their cheeks">
+        <span class="tile__cap">Graphite</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-habitat-67.jpg" data-alt="Stacked concrete modules of Habitat 67 in Montreal" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-habitat-67.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Stacked concrete modules of Habitat 67 in Montreal">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-snow-mountain.jpg" data-alt="Skiers crossing a snowy field beneath a mountain" data-medium="Film">
+        <img src="assets/img/gallery/thumb/p-snow-mountain.jpg" width="760" height="513" loading="lazy" decoding="async" alt="Skiers crossing a snowy field beneath a mountain">
+        <span class="tile__cap">Film</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-satin-study.jpg" data-alt="Colored pencil study of blue satin fabric against gold" data-medium="Colored pencil">
+        <img src="assets/img/gallery/thumb/a-satin-study.jpg" width="760" height="599" loading="lazy" decoding="async" alt="Colored pencil study of blue satin fabric against gold">
+        <span class="tile__cap">Colored pencil</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-seawall-bw.jpg" data-alt="Sitting on a seawall at dusk, black and white" data-medium="Film">
+        <img src="assets/img/gallery/thumb/p-seawall-bw.jpg" width="760" height="503" loading="lazy" decoding="async" alt="Sitting on a seawall at dusk, black and white">
+        <span class="tile__cap">Film</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-dried-flowers.jpg" data-alt="Dried flowers in a bottle casting a shadow on a sunlit wall" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-dried-flowers.jpg" width="589" height="760" loading="lazy" decoding="async" alt="Dried flowers in a bottle casting a shadow on a sunlit wall">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-watercolor-cottage.jpg" data-alt="Watercolor of a cottage among pink blossom trees" data-medium="Watercolor">
+        <img src="assets/img/gallery/thumb/a-watercolor-cottage.jpg" width="520" height="760" loading="lazy" decoding="async" alt="Watercolor of a cottage among pink blossom trees">
+        <span class="tile__cap">Watercolor</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-coastline.jpg" data-alt="Two people looking out over a rocky coastline at dusk" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-coastline.jpg" width="760" height="427" loading="lazy" decoding="async" alt="Two people looking out over a rocky coastline at dusk">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-cafe-corner.jpg" data-alt="A quiet cafe corner with a large plant in the window" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-cafe-corner.jpg" width="760" height="513" loading="lazy" decoding="async" alt="A quiet cafe corner with a large plant in the window">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-skylight-bw.jpg" data-alt="Afternoon light falling through a skylight, black and white" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-skylight-bw.jpg" width="760" height="504" loading="lazy" decoding="async" alt="Afternoon light falling through a skylight, black and white">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-still-life.jpg" data-alt="Colored pencil still life in blue, violet and gold" data-medium="Colored pencil">
+        <img src="assets/img/gallery/thumb/a-still-life.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Colored pencil still life in blue, violet and gold">
+        <span class="tile__cap">Colored pencil</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-blossom-sky.jpg" data-alt="Wind-blown blossoms against a clear blue sky" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-blossom-sky.jpg" width="760" height="560" loading="lazy" decoding="async" alt="Wind-blown blossoms against a clear blue sky">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-winter-window.jpg" data-alt="Winter light through a porch window looking onto a frozen lake" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-winter-window.jpg" width="760" height="513" loading="lazy" decoding="async" alt="Winter light through a porch window looking onto a frozen lake">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-film-camera.jpg" data-alt="Shooting a film camera, caught in a window reflection" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-film-camera.jpg" width="600" height="760" loading="lazy" decoding="async" alt="Shooting a film camera, caught in a window reflection">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-poppies.jpg" data-alt="Colored pencil poppies shown panel by panel as the drawing progresses" data-medium="Colored pencil">
+        <img src="assets/img/gallery/thumb/a-poppies.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Colored pencil poppies shown panel by panel as the drawing progresses">
+        <span class="tile__cap">Colored pencil</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-sunlit-wall.jpg" data-alt="Diagonal afternoon light across a bare white wall" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-sunlit-wall.jpg" width="760" height="760" loading="lazy" decoding="async" alt="Diagonal afternoon light across a bare white wall">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-pebble-beach.jpg" data-alt="A lone yellow marker on an empty pebble beach" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-pebble-beach.jpg" width="571" height="760" loading="lazy" decoding="async" alt="A lone yellow marker on an empty pebble beach">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-boston-bw.jpg" data-alt="Boston skyline across the Charles River, black and white" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-boston-bw.jpg" width="760" height="504" loading="lazy" decoding="async" alt="Boston skyline across the Charles River, black and white">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-primrose.jpg" data-alt="A cluster of pink evening primrose in low light" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-primrose.jpg" width="760" height="570" loading="lazy" decoding="async" alt="A cluster of pink evening primrose in low light">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="art" data-full="assets/img/gallery/a-collage.jpg" data-alt="Mixed-media collage of flowers, buildings and cut paper" data-medium="Mixed media">
+        <img src="assets/img/gallery/thumb/a-collage.jpg" width="760" height="489" loading="lazy" decoding="async" alt="Mixed-media collage of flowers, buildings and cut paper">
+        <span class="tile__cap">Mixed media</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-farm-rows.jpg" data-alt="Rows of young crops running toward a village on the horizon" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-farm-rows.jpg" width="668" height="760" loading="lazy" decoding="async" alt="Rows of young crops running toward a village on the horizon">
+        <span class="tile__cap">Digital</span>
+      </button>
+
+      <button class="tile" type="button" data-cat="photo" data-full="assets/img/gallery/p-overcast-lake.jpg" data-alt="An overcast morning looking across a lake toward low houses" data-medium="Digital">
+        <img src="assets/img/gallery/thumb/p-overcast-lake.jpg" width="566" height="760" loading="lazy" decoding="async" alt="An overcast morning looking across a lake toward low houses">
+        <span class="tile__cap">Digital</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact =========================================================== -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="contact__bg" aria-hidden="true">
+    <img src="assets/img/boston-bw.jpg" alt="" width="1800" height="1194" loading="lazy" decoding="async">
+  </div>
+
+  <div class="contact__inner">
+    <p class="eyebrow" data-reveal>Say hello</p>
+    <h2 class="contact__title display" id="contact-h" data-reveal style="--delay:60ms">Let's connect</h2>
+    <p class="contact__sub" data-reveal style="--delay:120ms">
+      Always up for a conversation about product, social ventures, or anything in between!
+    </p>
+
+    <div class="contact__actions" data-reveal style="--delay:180ms">
+      <a class="btn btn--light" href="mailto:rebeccaluo0508@gmail.com">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+        Email me
+      </a>
+      <a class="btn btn--light" href="https://www.linkedin.com/in/rebecca-luo/" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.9 21.5h4.2V9.6H2.9v11.9zM9.7 9.6h4v1.6h.06c.56-1.02 1.93-2.1 3.97-2.1 4.25 0 5.03 2.62 5.03 6.03v6.37h-4.2v-5.65c0-1.42-.03-3.25-2-3.25-2 0-2.3 1.54-2.3 3.14v5.76h-4.2V9.6z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn btn--light" href="assets/docs/Rebecca-Luo-Resume.pdf" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+        Résumé
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <p style="margin:0">&copy; 2026 Rebecca Luo</p>
+    <p style="margin:0">Updated August 2026 &middot; <a href="https://github.com/bekluoo/bekluoo.github.io" target="_blank" rel="noopener">Source on GitHub</a></p>
+  </div>
+</footer>
+
+<button class="totop" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true">
+  <div class="sheet__panel"></div>
 </div>
 
-
-
-
-<!-- middle section about -->
-<div class = "about">
-
-  <div class="w3-center" style="padding-left: 15%; padding-right:15%; float:center">
-    <h3>ABOUT ME</h3> <br>
-
-    <p class = "w3-left"> Hello! Since graduating Emory University Spring of 2022 with a double major in Computer Science and Economics, I have been working at Bain & Company in the <a href="https://www.bain.com/industry-expertise/private-equity/tech-due-diligence/">Tech Insights Group </a>. It's a role I greatly enjoy at intersection of finance and tech to understand the commercial implications of tech-enabled targets all while working with a tight-knit team of consultants and technologists. I am currently an MBA candidate at the Yale School of Management to further engage my interests at the intersection of tech and business. </p>
-    <br>
-    <p class = "w3-left"> In my free time, I am extremely passionate about closing the education gap of underrepresented student populations and love to dabble in all things art related! This website was created as a side project for me to  organize my hobby portfolios as well as technical projects. Thank you for stopping by and feel free to reach out!</p>
-    <br>
-
-    <p> Updated as of : Aug 2025 </p>
-
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery viewer" aria-hidden="true">
+  <button class="lightbox__close" type="button" data-lb-close aria-label="Close viewer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev aria-label="Previous image">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next aria-label="Next image">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+  <div class="lightbox__stage"><img src="" alt=""></div>
+  <div class="lightbox__bar">
+    <span class="lightbox__count" aria-live="polite"></span>
+    <span class="lightbox__cap"></span>
   </div>
 </div>
 
-<!-- middle section about -->
-
-
-
-<!-- Project -->
-<div class = "Projects w3-center" id = "projects">
-  <br>
-  <h3>PROJECTS</h3> 
-  <br>
-  <p><i>Click on each project/organizations I love being involved with for more information.</i></p>
-  <br><br> 
-  <div class="container">
-    
-        <!--   <div class="w3-col l4 m6" style = "margin-bottom: 5%; margin-left: 33%">
-          <div class="w3-hover-opacity">
-          <a href="https://rluo24.myportfolio.com/" target="_blank"><img src="View.png" class="img-responsive" alt="img" ></a>
-          </div>
-          </div>-->
-
-<!-- research and design -->
-
-          <h3>Research / design projects</h3><br>
-
-
-      <div class=" row w3-row-padding w3-section">
-
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="AirEmory.html"><img src="2.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Air Emory </h4>
-          <p>Aug 2020 – May 2022 || Atlanta, GA </p>          
-          <p style="padding: 5%; ">Student-led air quality sensor network displaying live data from around campus at Emory.</p>
-        </div>
-        
-        
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="AJS.html"><img src="4.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4> AJ Stickers </h4>
-          <p>June 2021 – May 2022 || Atlanta, GA</p>             
-          <p style="padding: 5%;">E-commerace sticker store to empower women-in-STEM and promote mental health. </p>
-        </div>
-        
-        
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-              <a href="Research.html"><img src="1.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>CIMM Research Project</h4>
-          <p>Summer 2019 || Baton Rouge, LA  </p>
-          <p style="padding: 5%; ">National Science Foundation REU project on Examination of the Mechanical and Phase Properties of the Refractory High Entropy Alloy ReMoNbTaV.</p>
-        </div>
-
-
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="DT.html"><img src="5.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Design Thinking for Emory Goizueta</h4>
-          <p>Spring 2021 || Atlanta, GA </p>             
-          <p style="padding: 5%; ">Semester long team project to reimagine & improve the Emory Goizueta Business School Accounting BBA/MPA program through the process of design thinking.  </p>
-        </div>
-
-     </div>
-
-<!-- organizations -->
-
-          <h3>Organizations I'm passionate about :) </h3><br>
-    <div class=" row w3-row-padding w3-section">
-
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="BCNC.html"><img src="7.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>BCNC</h4>
-          <p>Sept 2022 – Present || Boston, MA </p>            
-          <p style="padding: 5%;">Boston Chinatown Neighborhood Center (BCNC) empowers Asians and new immigrants to by providing a broad range programs and services to more than 13,000 children, youth, and adults every year. </p>
-       </div>
-       
-       
-        <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="CLC.html"><img src="8.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Cambridge Community Learning Center</h4>
-          <p>Sept 2023 – Present || Boston, MA </p>            
-          <p style="padding: 5%;">The Cambridge Community Learning Center (CLC) provides free classes and programs to adult learners in the area. </p>
-       </div>
-       
-       
-       <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="MCF.html"><img src="3.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Migrant Children’s Foundation</h4>
-          <p> Nov 2020 – Present || Beijing, China (Remote) </p>          
-          <p style="padding: 5%; ">Non-profit working with disadvantaged schools in Beijing and the surrounding areas to provide healthcare and educational opportunities to the children who attend them.</p>
-        </div>
-
-
-       <div class="w3-col l3 m4" style = "margin-bottom: 1%">
-          <div class="w3-hover-opacity">
-            <a href="TO.html"><img src="6.png" class="img-responsive" alt="img"></a>
-          </div>
-          <h4>Technological Organizations </h4>
-          <p>Sept 2018 – Present || Atlanta, GA & Remote </p>            
-          <p style="padding: 5%;">Girls Who Code/Emory ProgramHers/Rewriting the Code are all organizations that aim to support women in computer science and other technological fields. </p>
-       </div>
-       
-  </div>
-
-  </div>
-</div>
-
-<!-- Project -->
-
-
-<!-- Contact -->
-
-<div class = "Contact" id = "contact">
-<div class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-
-<h4>View & Download My Resume </h4>
-<a class="fa fa-file-text w3-hover-opacity w3-center " href="Rebecca_Luo_Resume.pdf"target="_blank" ></a>
-
-<h4>Let's Stay Connected!</h4>
-<a class="fa fa-linkedin w3-hover-opacity w3-center " href="https://www.linkedin.com/in/rebecca-luo-2aa7b4186/" target="_blank"></a>
-
-<h4> Contact Me At -- <a href="mailto:rebeccaluo0508@gmail.com"> rebeccaluo0508@gmail.com</a></h4>
-
-
-</div>
-</div>
-<!-- Contact -->
-
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
-
-
