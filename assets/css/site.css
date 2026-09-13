@@ -9,22 +9,19 @@
    -------------------------------------------------------------------------- */
 :root {
   /* Surfaces */
-  --paper:      #faf8f4;
-  --paper-alt:  #f2efe9;
-  --line:       #e3dfd6;
+  --paper:      #faf8f5;
+  --paper-alt:  #fff;
+  --line:       #c9c1bb;
 
   /* Ink */
   --ink:        #171614;
   --ink-2:      #4a453f;
   --ink-3:      #79726a;
 
-  /* Signature accents. Cotton periwinkle and rose carry the page; orange
-     is reserved for work roles so the timeline reads at a glance. */
-  --peri:       #4356b5;   --peri-soft:   #dde3fa;
-  --pink:       #c2497c;   --pink-soft:   #fbd9e8;
-  --orange:     #d0600f;   --orange-soft: #fbe0cb;
-  --terra:      #c2497c;
-  --mauve:      #8a6068;
+  /* Signature accents */
+  --peri:       #576fab;   --peri-soft:   #dde3fa;
+  --pink:       #b37890;   --pink-soft:   #edd5e0;
+  --mauve:      #694d53;   --mauve-soft:  #e0d5d7;
 
   /* Motion */
   --ease:       cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -108,7 +105,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.025em; }
   content: "";
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--dot, var(--terra));
+  background: var(--dot, var(--pink));
   flex: none;
 }
 
@@ -137,21 +134,21 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.025em; }
   height: 100%; width: 100%;
   transform: scaleX(0);
   transform-origin: 0 50%;
-  background: linear-gradient(90deg, var(--peri), var(--pink) 34%, #63b6dd 66%, #4cbfa8);
+  background: linear-gradient(90deg, var(--peri), var(--pink));
   will-change: transform;
 }
 
 @supports selector(::-webkit-scrollbar) {
   ::-webkit-scrollbar { width: 11px; height: 11px; }
-  ::-webkit-scrollbar-track { background: var(--paper-alt); }
+  ::-webkit-scrollbar-track { background: var(--mauve); }
   ::-webkit-scrollbar-thumb {
     border-radius: 99px;
-    border: 3px solid var(--paper-alt);
+    border: 3px solid var(--mauve);
     background: var(--mauve);
   }
-  ::-webkit-scrollbar-thumb:hover { background: var(--terra); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--pink); }
 }
-html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
+html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: 2rem; }
 
 /* --- Nav ------------------------------------------------------------------ */
 .nav {
@@ -330,7 +327,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   z-index: -1;
   background:
     radial-gradient(80% 80% at 2% 4%,   color-mix(in srgb, var(--peri) 20%, transparent) 0%, transparent 80%),
-    radial-gradient(60% 60% at 30% 96%, color-mix(in srgb, var(--terra) 10%, transparent) 0%, transparent 60%);
+    radial-gradient(60% 60% at 30% 96%, color-mix(in srgb, var(--pink) 10%, transparent) 0%, transparent 60%);
 }
 
 .hero__hello {
@@ -347,13 +344,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   margin: 0.28em 0 0;
 }
 
-.hero__welcome {
-  font-size: clamp(1.1rem, 2vw, 1.35rem);
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  color: var(--ink-3);
-  margin: 0.28em 0 0;
-}
+
 
 /* Photo: full-bleed, no frame, no border, no shadow. */
 .hero__photo { position: relative; min-height: 62vh; max-height: 100vh }
@@ -370,7 +361,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   display: grid;
   place-items: center;
   width: 60px; height: 60px;
-  border-radius: 16px;
+  border-radius: 50%;
   color: var(--mauve);
   text-decoration: none;
   background: #fff;
@@ -400,13 +391,12 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   text-decoration: none;
   transition: color 0.22s var(--ease), gap 0.22s var(--ease);
 }
-.cue:hover { color: var(--terra); gap: 0.9rem; }
+.cue:hover { color: var(--pink); gap: 0.9rem; }
 .cue i {
   display: grid;
   place-items: center;
-  width: 35px; height: 35px;
+  width: 50px; height: 50px;
   border-radius: 50%;
-  border: 2px solid color-mix(in srgb, var(--ink) 18%, transparent);
   animation: cue 2.1s var(--ease) infinite;
 }
 .cue i::before {
@@ -429,7 +419,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   align-items: center;
   gap: 0.5rem;
   padding: 0.68rem 1.3rem;
-  border: 1.5px solid var(--ink);
+  border: 1.7px solid var(--ink);
   border-radius: 99px;
   background: var(--ink);
   color: var(--paper);
@@ -437,7 +427,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out),
               background 0.22s var(--ease), color 0.22s var(--ease);
 }
@@ -448,8 +438,8 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .btn--ghost { background: transparent; color: var(--ink); border-color: color-mix(in srgb, var(--ink) 24%, transparent); }
 .btn--ghost:hover { background: #fff; border-color: var(--ink); }
 
-.btn--accent { background: transparent; color: var(--terra); border-color: var(--terra); }
-.btn--accent:hover { background: var(--terra); color: #fff; }
+.btn--accent { background: transparent; color: var(--peri); border-color: var(--peri); }
+.btn--accent:hover { background: var(--peri); color: #fff; }
 
 .btn--light {
   background: rgb(255 255 255 / 0.12);
@@ -492,7 +482,6 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .snap figcaption::before {
   content: "";
   width: 18px; height: 2px;
-  background: var(--pink);
   flex: none;
 }
 
@@ -502,13 +491,13 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .prose a {
   color: var(--ink);
   font-weight: 500;
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--terra) 60%, transparent);
+  text-decoration: none;
+  text-decoration-color: color-mix(in srgb, var(--peri) 60%, transparent);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: color 0.2s var(--ease), text-decoration-color 0.2s var(--ease);
 }
-.prose a:hover { color: var(--terra); text-decoration-color: var(--terra); }
+.prose a:hover { color: var(--peri); text-decoration-color: var(--peri); }
 
 /* Fun-fact tiles */
 .facts {
@@ -551,35 +540,34 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   content: "";
   position: absolute;
   left: 21px; top: 26px; bottom: 26px;
-  width: 2px;
-  background: var(--line);
+  width: 3px;
+  background: var(--peri-soft);
 }
 
 .job {
   position: relative;
   padding-left: 3.75rem;
   padding-block: 1.35rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--peri-soft);
 }
 .job:last-child { border-bottom: 0; }
 
-/* Role icon replaces the old colour dot */
 .job__icon {
   position: absolute;
   left: 0; top: 1.5rem;
   width: 44px; height: 44px;
   display: grid;
   place-items: center;
-  border-radius: 13px;
-  background: var(--icon-bg, var(--orange-soft));
-  color: var(--icon-fg, var(--orange));
+  border-radius: 50%;
+  background: var(--icon-bg, var(--mauve-soft));
+  color: var(--icon-fg, var(--mauve));
   border: 2px solid var(--paper);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-fg, var(--orange)) 22%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-fg, var(--mauve)) 22%, transparent);
   transition: transform 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out);
 }
 .job:hover .job__icon {
   transform: scale(1.07);
-  box-shadow: 0 0 0 5px color-mix(in srgb, var(--icon-fg, var(--orange)) 16%, transparent);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--icon-fg, var(--mauve)) 16%, transparent);
 }
 .job__icon svg { width: 23px; height: 23px; }
 .job--edu { --icon-bg: var(--peri-soft); --icon-fg: var(--peri); }
@@ -596,9 +584,9 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   margin: 0;
   line-height: 1.25;
 }
-.job__org { color: var(--icon-fg, var(--orange)); }
+.job__org { color: var(--icon-fg, var(--mauve)); }
 .job__org a {
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: color-mix(in srgb, currentColor 38%, transparent);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
@@ -626,10 +614,10 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   font: inherit;
   font-size: 0.8125rem;
   font-weight: 500;
-  cursor: pointer;
+  cursor: default;
   transition: color 0.2s var(--ease), gap 0.2s var(--ease);
 }
-.job__toggle:hover { color: var(--icon-fg, var(--orange)); gap: 0.65rem; }
+.job__toggle:hover { color: var(--icon-fg, var(--mauve)); gap: 0.65rem; }
 .job__toggle svg { transition: transform 0.28s var(--ease); }
 .job__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 
@@ -642,7 +630,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .job__detail > div { overflow: hidden; }
 .job__detail ul { margin: 0.85rem 0 0.2rem; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
 .job__detail li { font-size: 0.9375rem; color: var(--ink-2); max-width: 46rem; }
-.job__detail li::marker { color: var(--icon-fg, var(--orange)); }
+.job__detail li::marker { color: var(--icon-fg, var(--mauve)); }
 .job__detail li b { color: var(--ink); font-weight: 600; }
 
 /* --------------------------------------------------------------------------
@@ -684,7 +672,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   z-index: 3;
   border: 0; padding: 0;
   background: none;
-  cursor: pointer;
+  cursor: default;
   border-radius: inherit;
 }
 
@@ -692,13 +680,14 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .logo-chip {
   display: grid;
   place-items: center;
-  width: 58px; height: 58px;
-  border-radius: 13px;
   background: var(--t-chip, #fff);
-  padding: 8px;
   flex: none;
   box-shadow: 0 2px 8px -3px rgb(23 22 20 / 0.25);
   transition: transform 0.3s var(--ease-out);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  padding: 12px;
 }
 .logo-chip img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 .card:hover .logo-chip, .org:hover .logo-chip { transform: scale(1.05); }
@@ -770,6 +759,13 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   .orgs__row--b .org:nth-child(2) { flex: 3 1 0; }
 }
 
+.org .logo-chip {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .org__body { margin-top: auto; }
 .org__name { margin: 0; font-size: clamp(1.05rem, 2.1vw, 1.5rem); line-height: 1.14; max-width: 16em; }
 .org__role {
@@ -808,7 +804,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--ink-2);
-  cursor: pointer;
+  cursor: default;
   transition: background 0.22s var(--ease), color 0.22s var(--ease),
               border-color 0.22s var(--ease), transform 0.22s var(--ease-out);
 }
@@ -896,7 +892,6 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: 50% 46%;
-  filter: grayscale(1) contrast(1.06);
 }
 .contact::before {
   content: "";
@@ -909,7 +904,7 @@ html { scrollbar-color: var(--mauve) var(--paper-alt); scrollbar-width: thin; }
 .contact__title { font-size: clamp(2.4rem, 7.5vw, 4rem); margin: 0.5rem 0 0; color: #fff; }
 .contact__sub { max-width: 32rem; margin: 1rem auto 0; color: rgb(255 255 255 / 0.85); }
 .contact .eyebrow { color: rgb(255 255 255 / 0.75); }
-.contact .eyebrow::before { background: var(--orange); }
+.contact .eyebrow::before { background: var(--mauve); }
 .contact__actions { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-top: 2rem; }
 
 .footer { background: var(--ink); color: rgb(250 248 244 / 0.62); font-size: 0.8125rem; }
@@ -965,7 +960,7 @@ body.is-locked { overflow: hidden; }
   border: 0; border-radius: 50%;
   background: rgb(255 255 255 / 0.92);
   color: var(--ink);
-  cursor: pointer;
+  cursor: default;
   box-shadow: 0 5px 16px -8px rgb(23 22 20 / 0.5);
   transition: transform 0.22s var(--ease-out), background 0.22s var(--ease);
 }
@@ -1028,7 +1023,7 @@ body.is-locked { overflow: hidden; }
   text-transform: uppercase;
   color: var(--ink-3);
 }
-.beat h4::before { content: ""; width: 20px; height: 3px; border-radius: 2px; background: var(--t-ink); flex: none; }
+.beat h4::before { display: none; }
 .beat p { margin: 0; color: var(--ink-2); max-width: 44rem; }
 
 /* A picture inside a pop-up — the BCNC gift drawing, the women-in-tech marks */
@@ -1133,7 +1128,7 @@ body.is-locked { overflow: hidden; }
   border-radius: 50%;
   background: rgb(255 255 255 / 0.08);
   color: #fff;
-  cursor: pointer;
+  cursor: default;
   transition: background 0.22s var(--ease), transform 0.22s var(--ease-out);
 }
 .lightbox__nav:hover { background: rgb(255 255 255 / 0.22); }
@@ -1150,7 +1145,7 @@ body.is-locked { overflow: hidden; }
   border: 0; border-radius: 50%;
   background: rgb(255 255 255 / 0.12);
   color: #fff;
-  cursor: pointer;
+  cursor: default;
   transition: background 0.22s var(--ease), transform 0.22s var(--ease-out);
 }
 .lightbox__close:hover { background: rgb(255 255 255 / 0.28); transform: rotate(90deg); }
@@ -1170,11 +1165,11 @@ body.is-locked { overflow: hidden; }
   background: color-mix(in srgb, var(--paper) 90%, transparent);
   backdrop-filter: blur(8px);
   color: var(--ink);
-  cursor: pointer;
+  cursor: default;
   opacity: 0;
   transform: translateY(12px) scale(0.9);
   pointer-events: none;
   transition: opacity 0.3s var(--ease), transform 0.3s var(--ease-out), background 0.22s var(--ease);
 }
 .totop.is-shown { opacity: 1; transform: none; pointer-events: auto; }
-.totop:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+.totop:hover { background: var(--mauve); border-color: var(--mauve); color: #fff; }
